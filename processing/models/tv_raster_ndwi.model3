@@ -1,0 +1,88 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="model:TV Raster Normalized Difference_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="model:TV Raster Normalized Difference" name="alg_id" type="QString"/>
+      <Option value="TV Raster Normalized Difference" name="component_description" type="QString"/>
+      <Option value="453" name="component_pos_x" type="double"/>
+      <Option value="351" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="model:TV Raster Normalized Difference_1" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="NDWI" type="Map">
+          <Option value="model:TV Raster Normalized Difference_1" name="child_id" type="QString"/>
+          <Option value="NDWI" name="component_description" type="QString"/>
+          <Option value="678" name="component_pos_x" type="double"/>
+          <Option value="468" name="component_pos_y" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="NDWI" name="name" type="QString"/>
+          <Option value="gdal:rastercalculator_1:index" name="output_name" type="QString"/>
+        </Option>
+      </Option>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="rasterabsorcao" type="List">
+          <Option type="Map">
+            <Option value="rasterabsorcao" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="rasterrefleccao" type="List">
+          <Option type="Map">
+            <Option value="rasterrefleccao" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option value="ThresholdVect" name="model_group" type="QString"/>
+  <Option value="TV Raster NDWI" name="model_name" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="model:TV Raster Normalized Difference_1:NDWI" type="Map">
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option name="default" type="invalid"/>
+      <Option value="NDWI" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="model:TV Raster Normalized Difference_1:NDWI" name="name" type="QString"/>
+      <Option value="rasterDestination" name="parameter_type" type="QString"/>
+      <Option value="true" name="supports_non_file_outputs" type="bool"/>
+    </Option>
+    <Option name="rasterabsorcao" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="NIR" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="rasterabsorcao" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="rasterrefleccao" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Green" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="rasterrefleccao" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="rasterabsorcao" type="Map">
+      <Option value="rasterabsorcao" name="component_description" type="QString"/>
+      <Option value="154" name="component_pos_x" type="double"/>
+      <Option value="617" name="component_pos_y" type="double"/>
+      <Option value="rasterabsorcao" name="name" type="QString"/>
+    </Option>
+    <Option name="rasterrefleccao" type="Map">
+      <Option value="rasterrefleccao" name="component_description" type="QString"/>
+      <Option value="152" name="component_pos_x" type="double"/>
+      <Option value="90" name="component_pos_y" type="double"/>
+      <Option value="rasterrefleccao" name="name" type="QString"/>
+    </Option>
+  </Option>
+</Option>

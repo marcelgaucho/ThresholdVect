@@ -1,0 +1,31 @@
+[general]
+name=Threshold Vectorization
+description=Processing plugin-based provider that adds a model to polygonize a raster from a lower and an upper threshold. Provedor do Processing que inclui um modelo para vetorização de um raster a partir de um limiar inferior e um superior.
+about=The model added is named TV Vectorization Threshold. For this model to work, the plugin adds this and other models to a group called ThresholdVect, and scripts to a group with the same name.
+      There are a number of parameters that can be set to optimize the polygonization. These parameters are described in the help of the model.
+      Also, a model is added to calculate the NDWI, a possible input to the plugin model that can be used to extract water bodies.
+      To extract water bodies using NDWI, perform the following 2 steps:
+      1- Extract NDWI using the TV Raster NDWI or TV Multiband NDWI model, depending on whether the bands are in different rasters or in a single raster.
+      2- Execute the TV Vectorization Threshold model. 
+      
+      --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      O modelo adicionado é denominado TV Vectorization Threshold. Para que esse modelo funcione, o plugin adiciona este e outros modelos a um grupo chamado ThresholdVect, e scripts a um grupo com o mesmo nome.
+      Há vários parâmetros que podem ser configurados para otimizar a vetorização. Esses parâmetros são descritos na ajuda do modelo.
+      Além disso, um modelo é adicionado para calcular o NDWI, uma possível entrada para o modelo do plugin que pode ser usada para extrair massas d'água.
+      Para extrair corpos de água usando o NDWI, execute os 2 passos seguintes:
+      1- Extraia o NDWI usando o modelo TV Raster NDWI ou TV Multiband NDWI, dependendo se as bandas estão em diferentes rasters ou em um único raster.
+      2- Execute o modelo TV Vectorization Threshold.
+      
+version=0.1
+qgisMinimumVersion=2.99
+qgisMaximumVersion=3.99
+category=Processing
+author=Marcel Rotunno (IBGE)
+email=marcel.rotunno@gmail.com
+tags=processing,provider,polygonization,vectorization,raster,IBGE
+homepage=https://github.com/marcelgaucho/ThresholdVect
+tracker=https://github.com/marcelgaucho/ThresholdVect
+repository=https://github.com/marcelgaucho/ThresholdVect
+icon=images/icon.png
+experimental=True
+deprecated=False

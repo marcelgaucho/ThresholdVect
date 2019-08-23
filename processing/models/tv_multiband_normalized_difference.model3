@@ -1,0 +1,190 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="gdal:rastercalculator_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="gdal:rastercalculator" name="alg_id" type="QString"/>
+      <Option value="Raster calculator" name="component_description" type="QString"/>
+      <Option value="684" name="component_pos_x" type="double"/>
+      <Option value="361" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="gdal:rastercalculator_1" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="index" type="Map">
+          <Option value="gdal:rastercalculator_1" name="child_id" type="QString"/>
+          <Option value="index" name="component_description" type="QString"/>
+          <Option value="782" name="component_pos_x" type="double"/>
+          <Option value="444" name="component_pos_y" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="index" name="name" type="QString"/>
+          <Option value="OUTPUT" name="output_name" type="QString"/>
+        </Option>
+      </Option>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="BAND_A" type="List">
+          <Option type="Map">
+            <Option value="banda1" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="BAND_B" type="List">
+          <Option type="Map">
+            <Option value="banda2" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="BAND_C" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="BAND_D" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="BAND_E" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="BAND_F" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="FORMULA" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="(A*1.0-B)/(A*1.0+B)" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_A" type="List">
+          <Option type="Map">
+            <Option value="rasterentrada" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_B" type="List">
+          <Option type="Map">
+            <Option value="rasterentrada" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_C" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_D" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_E" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_F" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="NO_DATA" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="RTYPE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="5" name="static_value" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option value="ThresholdVect" name="model_group" type="QString"/>
+  <Option value="TV Multiband Normalized Difference" name="model_name" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="banda1" type="Map">
+      <Option value="false" name="allow_multiple" type="bool"/>
+      <Option name="default" type="invalid"/>
+      <Option value="Reflection Band" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="banda1" name="name" type="QString"/>
+      <Option value="band" name="parameter_type" type="QString"/>
+      <Option value="rasterentrada" name="parent_layer" type="QString"/>
+    </Option>
+    <Option name="banda2" type="Map">
+      <Option value="false" name="allow_multiple" type="bool"/>
+      <Option name="default" type="invalid"/>
+      <Option value="Absortion Band" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="banda2" name="name" type="QString"/>
+      <Option value="band" name="parameter_type" type="QString"/>
+      <Option value="rasterentrada" name="parent_layer" type="QString"/>
+    </Option>
+    <Option name="gdal:rastercalculator_1:index" type="Map">
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option name="default" type="invalid"/>
+      <Option value="index" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="gdal:rastercalculator_1:index" name="name" type="QString"/>
+      <Option value="rasterDestination" name="parameter_type" type="QString"/>
+      <Option value="false" name="supports_non_file_outputs" type="bool"/>
+    </Option>
+    <Option name="rasterentrada" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option value="Raster" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="rasterentrada" name="name" type="QString"/>
+      <Option value="raster" name="parameter_type" type="QString"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="banda1" type="Map">
+      <Option value="banda1" name="component_description" type="QString"/>
+      <Option value="396" name="component_pos_x" type="double"/>
+      <Option value="87" name="component_pos_y" type="double"/>
+      <Option value="banda1" name="name" type="QString"/>
+    </Option>
+    <Option name="banda2" type="Map">
+      <Option value="banda2" name="component_description" type="QString"/>
+      <Option value="388" name="component_pos_x" type="double"/>
+      <Option value="612" name="component_pos_y" type="double"/>
+      <Option value="banda2" name="name" type="QString"/>
+    </Option>
+    <Option name="rasterentrada" type="Map">
+      <Option value="rasterentrada" name="component_description" type="QString"/>
+      <Option value="144" name="component_pos_x" type="double"/>
+      <Option value="332" name="component_pos_y" type="double"/>
+      <Option value="rasterentrada" name="name" type="QString"/>
+    </Option>
+  </Option>
+</Option>
